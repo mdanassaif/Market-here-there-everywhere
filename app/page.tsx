@@ -123,10 +123,18 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-10 px-2 relative">
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-10 px-2">
       <Toaster />
       
-
+      {/* Blog Link */}
+      <div className="mb-6 flex justify-center">
+        <a 
+          href="/blog" 
+          className="text-gray-600 hover:text-gray-800 text-lg font-medium transition-colors duration-200 underline"
+        >
+          /Read the blog
+        </a>
+      </div>
       
       {/* Logo */}
       <div className="mb-6 flex justify-center">
@@ -195,7 +203,7 @@ export default function HomePage() {
                 <button
                   className={`ml-4 px-4 py-2 rounded-lg font-medium flex items-center gap-2 text-sm focus:outline-none transition-all ${
                     upvoted[platform.name]
-                      ? 'bg-[#5cdc91] text-white border border-green-400 cursor-not-allowed'
+                      ? 'bg-[#00ff6a] text-white border border-green-400 cursor-not-allowed'
                       : isDisabled
                       ? 'bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed'
                       : 'bg-gray-50 text-gray-700 hover:bg-green-50 hover:text-green-700 hover:border-green-200 border border-gray-200'

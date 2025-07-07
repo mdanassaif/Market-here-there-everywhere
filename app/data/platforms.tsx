@@ -148,67 +148,67 @@ export const PLATFORMS: Platform[] = [
 export const getPlatformDetails = (name: string): PlatformDetails => {
   const details: { [key: string]: PlatformDetails } = {
     'Reddit': {
-      howToShare: 'Provide genuine value, not just promotion',
-      community: 'r/startups, r/SideProject, r/Entrepreneur',
+      howToShare: 'Engage authentically in niche subreddits, share insights, and subtly promote to avoid bans.',
+      community: 'r/startups, r/SideProject, r/Entrepreneur, r/sideprojects',
       link: 'https://reddit.com'
     },
     'Product Hunt': {
-      howToShare: 'Launch Tuesday-Thursday at 12:01 AM PT',
+      howToShare: 'Launch at 2:30 AM PT, tell a compelling story, and actively seek feedback.',
       community: 'Product Hunt makers & early adopters',
       link: 'https://producthunt.com'
     },
     'Peerlist': {
-      howToShare: 'Submit to Peerlist Launchpad section',
+      howToShare: 'Schedule projects before Monday—it\'s launch day!  Then, post a quick update about them in your scroll.',
       community: 'Tech professionals & startup founders',
       link: 'https://peerlist.io'
     },
     'Hacker News': {
-      howToShare: 'Share substantial, technical content',
+      howToShare: 'Post technical Show HN content, stay humble, and avoid overt self-promotion.',
       community: 'Tech experts & developers',
       link: 'https://news.ycombinator.com'
     },
     'X': {
-      howToShare: 'Use #BuildInPublic & share progress',
-      community: 'Tech Twitter, #StartupTwitter',
+      howToShare: 'Tweet #BuildInPublic updates with visuals, tag influencers, join trending startup threads.',
+      community: 'Tech Twitter, #StartupTwitter, #BuildInPublic',
       link: 'https://x.com'
     },
     'TikTok': {
-      howToShare: 'Create viral behind-the-scenes content',
+      howToShare: 'Craft quirky behind-the-scenes videos with trending sounds to hook #TechTok viewers.',
       community: 'TechTok, #StartupTok, #SmallBusiness',
       link: 'https://tiktok.com'
     },
     'Threads': {
-      howToShare: 'Share daily progress & milestones',
-      community: 'Tech community & startup builders',
+      howToShare: 'Post real-time updates, use polls, and tag tech communities for engagement.',
+      community: 'Tagged BuildInPublic & Based on your project, you can tag the community',
       link: 'https://threads.net'
     },
     'LinkedIn': {
-      howToShare: 'Share founder journey & achievements',
+      howToShare: 'Share polished founder stories, tag investors, and use articles to showcase expertise.',
       community: 'B2B professionals & investors',
       link: 'https://linkedin.com'
     },
     'Indie Hackers': {
-      howToShare: 'Share your journey & get advice',
+      howToShare: 'Post raw revenue and struggles in milestones to spark bootstrappers’ discussions.',
       community: 'Indie founders & bootstrappers',
       link: 'https://indiehackers.com'
     },
     'DevHunt': {
-      howToShare: 'Submit dev tools & APIs for review',
+      howToShare: 'Submit polished dev tools with demos, highlight open-source for developer credibility.',
       community: 'Developer community & tool hunters',
       link: 'https://devhunt.org'
     },
     "There's An AI For That": {
-      howToShare: 'Submit AI tools for discovery',
+      howToShare: 'Submit AI tools with catchy demo videos, highlight unique use cases.',
       community: 'AI enthusiasts & tool hunters',
       link: 'https://theresanaiforthat.com'
     },
     'LaunchFast': {
-      howToShare: 'Share your MVP journey publicly',
+      howToShare: 'Share MVP’s origin story, post rapid updates, and invite early adopter feedback.',
       community: 'Rapid builders & early adopters',
       link: 'https://launchfast.co'
     },
     'TinyLaunch': {
-      howToShare: 'Create landing page & validate ideas',
+      howToShare: 'Build sleek landing pages, A/B test headlines, and share user testimonials.',
       community: 'Idea validators & early users',
       link: 'https://tinylaun.ch'
     }
