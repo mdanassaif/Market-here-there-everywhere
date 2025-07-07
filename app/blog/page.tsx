@@ -4,10 +4,70 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <>
+      <Head>
+        <title>From Zero to 1,000 Visitors in 24 Hours - BruhGrow Tools Launch Story</title>
+        <meta name="description" content="How I launched BruhGrow Tools across multiple platforms and got 1,000+ visitors in 24 hours. Complete breakdown of what worked and what didn't." />
+        <meta name="keywords" content="marketing, launch strategy, product launch, social media marketing, Reddit, Hacker News, Threads, Peerlist, BruhGrow Tools" />
+        <meta name="author" content="mdanassaif" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://bruhgrow.com/blog" />
+        <meta property="og:title" content="From Zero to 1,000 Visitors in 24 Hours - BruhGrow Tools Launch Story" />
+        <meta property="og:description" content="How I launched BruhGrow Tools across multiple platforms and got 1,000+ visitors in 24 hours. Complete breakdown of what worked and what didn't." />
+        <meta property="og:image" content="/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="BruhGrow Tools" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://bruhgrow.com/blog" />
+        <meta property="twitter:title" content="From Zero to 1,000 Visitors in 24 Hours - BruhGrow Tools Launch Story" />
+        <meta property="twitter:description" content="How I launched BruhGrow Tools across multiple platforms and got 1,000+ visitors in 24 hours. Complete breakdown of what worked and what didn't." />
+        <meta property="twitter:image" content="/og.png" />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://bruhgrow.com/blog" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": "From Zero to 1,000 Visitors in 24 Hours - BruhGrow Tools Launch Story",
+              "description": "How I launched BruhGrow Tools across multiple platforms and got 1,000+ visitors in 24 hours. Complete breakdown of what worked and what didn't.",
+              "image": "/og.png",
+              "author": {
+                "@type": "Person",
+                "name": "mdanassaif",
+                "url": "https://mdanassaif.xyz/"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "BruhGrow Tools",
+                "url": "https://bruhgrow.com/"
+              },
+              "datePublished": "2024-01-01",
+              "dateModified": "2024-01-01",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://bruhgrow.com/blog"
+              }
+            })
+          }}
+        />
+      </Head>
+      <div className="min-h-screen bg-white text-gray-900">
       <div className="max-w-4xl mx-auto px-6 py-12">
         {/* Header */}
         <div className="mb-6">
@@ -222,5 +282,6 @@ export default function BlogPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
