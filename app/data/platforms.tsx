@@ -160,7 +160,7 @@ export const getPlatformDetails = (name: string): PlatformDetails => {
     'Peerlist': {
       howToShare: 'Schedule projects before Monday—it\'s launch day!  Then, post a quick update about them in your scroll.',
       community: 'Tech professionals & startup founders',
-      link: 'https://peerlist.io'
+      link: 'https://peerlist.io/mdanassaif/signup'
     },
     'Hacker News': {
       howToShare: 'Post technical Show HN content, stay humble, and avoid overt self-promotion.',
